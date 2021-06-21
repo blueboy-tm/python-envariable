@@ -1,6 +1,11 @@
 
 Change System Environment Variable permanently
 
+## Install
+```shell
+pip install envariable
+```
+
 ## Example
 ```python
 from envarible import setenv, unsetenv, getenv, getenvall
