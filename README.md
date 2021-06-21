@@ -9,7 +9,7 @@ pip install envariable
 
 ## Example
 ```python
-from envarible import setenv, unsetenv, getenv, getenvall
+from envariable import setenv, unsetenv, getenv, getenvall
 # The variable TEST is stored permanently with the VALUE value
 setenv('TEST', 'VALUE') 
 
