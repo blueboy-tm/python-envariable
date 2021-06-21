@@ -19,7 +19,7 @@ def unsetenv(variable: str) -> None:
     example: envunset('TESTVARIABLE')
     """
     if variable and type(variable) == str:
-        os.system(f'setx \"{variable}\"=\"\" > nul')
+        os.system(f'setx \"{variable}\" \"\" > nul')
         os.system(f'reg delete HKCU\Environment /F /V \"{variable}\" > nul')
         try:
             os.environ.pop(variable)
