@@ -8,7 +8,7 @@ def readme():
 setup(
     name='envariable',
     packages=['envariable'],
-    version='1.1',
+    version='1.2',
     license='MIT',
     description='Change System Environment Variable permanently',
     long_description=readme(),
@@ -16,7 +16,7 @@ setup(
     author='Arshia Ihammi',
     author_email='arshiaihammi@gmail.com',
     url='https://github.com/blueboy-tm/python-envariable/',
-    download_url='https://github.com/blueboy-tm/python-envariable/blob/main/dist/envariable-1.0.tar.gz',
+    download_url='https://github.com/blueboy-tm/python-envariable/blob/main/dist/envariable-1.2.tar.gz',
     keywords=['env', 'variable', 'environment', 'os', 'system', 'Environment Variable', 'environ'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',

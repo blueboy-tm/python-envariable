@@ -7,7 +7,7 @@ def setenv(variable: str, value: str) -> None:
     example: envset('TESTVARIABLE', 'TESTVALUE')
     """
     if variable and type(variable) == str and type(value) == str:
-        os.system('setx \"{}\" \"{}\" > nul')
+        os.system(f'setx \"{variable}\" \"{value}\" > nul')
         os.environ[variable]=value
     else:
         raise ValueError('use help(setenv)')
