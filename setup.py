@@ -1,12 +1,18 @@
 from setuptools import setup, version
 
 
+def readme():
+	with open('./README.md') as f:
+		return f.read()
+
 setup(
     name='envariable',
     packages=['envariable'],
-    version='1.0',
+    version='1.1',
     license='MIT',
     description='Change System Environment Variable permanently',
+    long_description=readme(),
+	long_description_content_type='text/markdown',
     author='Arshia Ihammi',
     author_email='arshiaihammi@gmail.com',
     url='https://github.com/blueboy-tm/python-envariable/',
@@ -26,5 +32,6 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3 :: Only'
-    ]
+    ],
+    python_requires='~=3.3',
 )
